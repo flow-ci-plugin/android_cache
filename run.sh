@@ -13,7 +13,7 @@
 
 
 
-if [[ $FLOW_ENABLE_CACHE != 'FALSE' ]]; then
+if [[ $FLOW_ENABLE_CACHE == 'TRUE' ]]; then
   echo 'start android cache'
   FLOW_CACHE_PATH="$CACHE_BASE_URL/gradle/user_cache"
   FLOW_USER_GRADLE_CACHE="$HOME/.gradle"
