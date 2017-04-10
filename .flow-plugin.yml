@@ -13,6 +13,18 @@ inputs:
     options:
       - TRUE
       - FALSE
+  - name: ENABLE_GRADLE_CACHE
+    editable: false
+    options:
+      - true=TRUE
+      - false=FALSE
+    default: 'FALSE'
+  - name: ENABLE_NPM_CACHE
+    editable: false
+    options:
+      - true=TRUE
+      - false=FALSE
+    default: 'TRUE'    
   - name: FLOW_VERSION
     editable: false
   - name: FLOW_PROJECT_ID
