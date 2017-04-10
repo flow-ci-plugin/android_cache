@@ -11,8 +11,8 @@ inputs:
   - name: FLOW_ENABLE_CACHE
     editable: true
     options:
-      - TRUE
-      - FALSE
+      - true=TRUE
+      - false=FALSE
   - name: ENABLE_GRADLE_CACHE
     editable: false
     options:
