@@ -39,7 +39,7 @@ gradle_cache(){
 }
 npm_cache(){
   echo 'start npm cache'
-  FLOW_NPM_CACHE_PATH="$CACHE_BASE_URL/$FLOW_VERSION/node_modules"
+  FLOW_NPM_CACHE_PATH="$CACHE_BASE_URL/$FLOW_VERSION/modules"
   if [[ -d $FLOW_NPM_CACHE_PATH ]]; then
     echo "cache exists"
   else
