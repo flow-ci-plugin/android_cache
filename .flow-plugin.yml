@@ -15,14 +15,16 @@ inputs:
       - false=FALSE
   - name: ENABLE_GRADLE_CACHE
     editable: true
-
+    desc_cn: "开启gradle缓存"
+    desc_en: "Enable gradle cache"
     options:
       - true=TRUE
       - false=FALSE
     default: 'FALSE'
   - name: ENABLE_NPM_CACHE
     editable: true
-
+    desc_cn: "开启npm缓存"
+    desc_en: "Enable npm cache"
     options:
       - true=TRUE
       - false=FALSE
