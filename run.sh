@@ -11,6 +11,10 @@
 #
 # ************************************************************
 
+# default sub cache setting
+FLOW_ENABLE_GRADLE_CACHE='TRUE'
+FLOW_ENABLE_NPM_CACHE='TRUE'
+
 gradle_cache(){
   echo 'start gradle cache'
   FLOW_GRADLE_CACHE_PATH="$CACHE_BASE_URL/gradle/user_cache"
@@ -37,6 +41,7 @@ gradle_cache(){
   echo "$(date)" > $FLOW_PROJECT_CACHE_PATH/cache_version
   rm -rf  $FLOW_PROJECT_GRADLE_CACHE && ln -s $FLOW_PROJECT_CACHE_PATH $FLOW_PROJECT_GRADLE_CACHE
 }
+
 npm_cache(){
   echo 'start npm cache'
   FLOW_NPM_CACHE_PATH="$CACHE_BASE_URL/$FLOW_VERSION/modules"
@@ -52,10 +57,11 @@ npm_cache(){
 
 if [[ $FLOW_ENABLE_CACHE == 'TRUE' ]]; then
   
-  if [[ $ENABLE_GRADLE_CACHE == 'TRUE' ]]; then
+  if [[ $FLOW_ENABLE_GRADLE_CACHE == 'TRUE' ]]; then
     gradle_cache
   fi
-  if [[ $ENABLE_NPM_CACHE == 'TRUE' ]]; then
+  
+  if [[ $FLOW_ENABLE_NPM_CACHE == 'TRUE' ]]; then
     npm_cache
   fi
 else
