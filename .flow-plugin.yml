@@ -14,15 +14,21 @@ inputs:
     editable: true
     desc_cn: "开启gradle缓存"
     desc_en: "Enable gradle cache"
-    category: "switcher"
+    options:
+      - true=TRUE		
+      - false=FALSE
     default: 'FALSE'
 
   - name: FLOW_ENABLE_NPM_CACHE
     editable: true
     desc_cn: "开启npm缓存"
     desc_en: "Enable npm cache"
-    category: "switcher"
+    options:
+      - true=TRUE		
+      - false=FALSE
     default: 'FALSE'
+    
+    
 
 script_path: ./run.sh  
   
