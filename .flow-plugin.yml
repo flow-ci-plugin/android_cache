@@ -15,8 +15,8 @@ inputs:
     desc_cn: "开启gradle缓存"
     desc_en: "Enable gradle cache"
     options:
-      - true=TRUE		
-      - false=FALSE
+      - TRUE=true		
+      - FALE=false
     default: 'FALSE'
 
   - name: FLOW_ENABLE_NPM_CACHE
@@ -24,8 +24,8 @@ inputs:
     desc_cn: "开启npm缓存"
     desc_en: "Enable npm cache"
     options:
-      - true=TRUE		
-      - false=FALSE
+      - TRUE=true		
+      - FALE=false
     default: 'FALSE'
     
     
