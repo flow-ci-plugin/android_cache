@@ -2,19 +2,15 @@
 name: android_cache
 version: 0.0.1
 language: android
-description: Android cache
+description: "缓存 gradle 或 npm 的安装依赖包，已有缓存时直接使用本地的依赖包，减少下载时间，提高构建效率"
 public: true
 tags:
   - android
   - cache
+  
 inputs:
-  - name: FLOW_ENABLE_CACHE
-    editable: true
-    options:
-      - true=TRUE
-      - false=FALSE
 
-- name: ENABLE_GRADLE_CACHE
+  - name: FLOW_ENABLE_GRADLE_CACHE
     editable: true
     desc_cn: "开启gradle缓存"
     desc_en: "Enable gradle cache"
@@ -23,7 +19,7 @@ inputs:
       - false=FALSE
     default: 'FALSE'
 
-- name: ENABLE_NPM_CACHE
+  - name: FLOW_ENABLE_GRADLE_CACHE
     editable: true
     desc_cn: "开启npm缓存"
     desc_en: "Enable npm cache"
@@ -32,8 +28,6 @@ inputs:
       - false=FALSE
     default: 'TRUE'    
 
-outputs:
-  - name: FLOW_ENABLE_CACHE
 script_path: ./run.sh  
   
 template: |  
