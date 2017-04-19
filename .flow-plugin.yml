@@ -19,7 +19,7 @@ inputs:
       - false=FALSE
     default: 'FALSE'
 
-  - name: FLOW_ENABLE_GRADLE_CACHE
+  - name: FLOW_ENABLE_NPM_CACHE
     editable: true
     desc_cn: "开启npm缓存"
     desc_en: "Enable npm cache"
