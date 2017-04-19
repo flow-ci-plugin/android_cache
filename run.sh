@@ -3,8 +3,8 @@
 # This step will enable/disable cache
 #
 #   Variables used:
-#     $FLOW_ENABLE_CACHE
-#     $FLOW_VERSION
+#     $FLOW_ENABLE_GRADLE_CACHE
+#     $FLOW_ENABLE_NPM_CACHE
 #
 #   Outputs:
 #     $FLOW_ENABLE_CACHE
@@ -12,8 +12,10 @@
 # ************************************************************
 
 # default sub cache setting
-FLOW_ENABLE_GRADLE_CACHE='TRUE'
-FLOW_ENABLE_NPM_CACHE='TRUE'
+#FLOW_ENABLE_GRADLE_CACHE='TRUE'
+#FLOW_ENABLE_NPM_CACHE='TRUE'
+
+FLOW_ENABLE_CACHE='TRUE'
 
 gradle_cache(){
   echo 'start gradle cache'
