@@ -57,11 +57,7 @@ npm_cache(){
   ln -s $FLOW_NPM_CACHE_PATH $FLOW_CURRENT_PROJECT_PATH
 }
 
-if [[ $FLOW_ENABLE_CACHE == 'TRUE' ]]; then
-
-  echo "gradle cache = $FLOW_ENABLE_GRADLE_CACHE"
-  echo "npm cache = $FLOW_ENABLE_NPM_CACHE"
-  
+if [[ $FLOW_ENABLE_CACHE == 'TRUE' ]]; then  
   if [[ $FLOW_ENABLE_GRADLE_CACHE == 'TRUE' ]]; then
     gradle_cache
   fi
